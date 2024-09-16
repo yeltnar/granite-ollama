@@ -1,0 +1,10 @@
+FROM "/tmp/granite-3b-code-instruct.Q4_K_M.gguf"
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+TEMPLATE """
+<|im_start|>system
+<|im_end|>
+<|im_start|>user
+<|im_end|>
+<|im_start|>assistant
+"""
