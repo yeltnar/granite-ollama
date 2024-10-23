@@ -7,14 +7,14 @@ services:
       - tmp=tmp
     ports:
       - 11434:11434
-    volume: 
-      - ./ollama:/root/.ollama
+    volumes: 
+      - $PWD/ollama:/root/.ollama
     restart: unless-stopped
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
-    container_name: openw-webui
+    container_name: open-webui
     ports: 
       - 8080:8080 
-    volume: 
+    volumes: 
       - ./open-web-ui:/app/backend/data 
     environment: OLLAMA_BASE_URL=http://host.containers.internal:11434
