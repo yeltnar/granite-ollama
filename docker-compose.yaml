@@ -1,6 +1,9 @@
 version: "3"
 services:
   ollama:
+    # add the following lines for desktop GPU
+    # devices:
+    #  - /dev/dri/card0:/dev/dri/card0 
     image: ollama/ollama
     container_name: ollama
     environment:
