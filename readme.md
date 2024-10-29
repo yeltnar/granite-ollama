@@ -1,5 +1,5 @@
 # running this repo
-To run, use `./.r/sh` which uses `podman` and `podman-compose` \
+To run, use `./r.sh` which uses `podman` and `podman-compose` \
 You will likely need to messs with GPU settings, if it does not work. \
 You can run without using the GPU but will likely be slower. 
 
