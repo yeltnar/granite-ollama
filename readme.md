@@ -4,9 +4,9 @@ You will likely need to messs with GPU settings, if it does not work. \
 You can run without using the GPU but will likely be slower. 
 
 # Getting model name
-add tag of model \
+add tag to model name to get name of download \
 https://ollama.com/library/granite-code \
-for example, this model could be added using `granite-code:3b`
+for example, this model could be added using `granite-code:3b` or `granite-code:8b`
 
 
 ## _TODO: Can try to use Continue VSCode plugin_
