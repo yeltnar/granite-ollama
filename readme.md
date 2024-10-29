@@ -3,6 +3,10 @@ To run, use `./r.sh` which uses `podman` and `podman-compose` \
 You will likely need to messs with GPU settings, if it does not work. \
 You can run without using the GPU but will likely be slower. 
 
+
+Note: you can run this without the front end container using the Ollama container directly \
+https://hub.docker.com/r/ollama/ollama
+
 # Getting model name
 add tag to model name to get name of download \
 https://ollama.com/library/granite-code \
