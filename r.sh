@@ -1,3 +1,4 @@
+podman pod rm pod_granite-ollama 
 podman rm -f ollama;
 podman rm -f open-webui;
 
