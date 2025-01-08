@@ -22,7 +22,9 @@ https://github.com/continuedev/continue/issues/1175#issuecomment-2081651169
 
 ## available models
 granite3-dense:2b \
-granite3-dense:8b
+granite3-dense:8b \
+granite3.1-dense:2b \
+granite3.1-dense:8b
 
 granite3-moe:1b \
 granite3-moe:3b
@@ -35,7 +37,7 @@ granite-code:34b
 ## API highlights
 
 ### pull model
-`curl http://localhost:11434/api/pull -d '{"name":"granite3-dense:8b"}'`
+`curl http://localhost:11434/api/pull -d '{"name":"granite3.1-dense:8b"}'`
 
 ### delete a model
 `curl -X DELETE http://localhost:11434/api/delete -d '{"name":"granite3-dense:2b"}'`
