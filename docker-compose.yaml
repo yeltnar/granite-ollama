@@ -21,3 +21,8 @@ services:
     volumes: 
       - ./open-web-ui:/app/backend/data 
     environment: OLLAMA_BASE_URL=http://host.containers.internal:11434
+  install-models: 
+    build: 
+      context: . 
+      dockerfile: ./install_models.Dockerfile 
+
