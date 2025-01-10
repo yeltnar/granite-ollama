@@ -18,7 +18,8 @@ for example, this model could be added using `granite-code:3b` or `granite-code:
 
 Note: when testing, you may have to try a couple of times to get in line generation to work
 
-1. Download the watsonx Code Assistant plugin
+1. Download the watsonx Code Assistant plugin. 
+    - VSCodium may need to manually download from the VSCode site (https://marketplace.visualstudio.com/items?itemName=IBM.wca-core)
 2. In the WatsonX Code Assistant settings, change backend provider to ollama
 3. Use the Ollama port, not Opew WebUI ( ie :11434 )
 4. Select the model (granite-code:3b, granite-code:8b, etc):
