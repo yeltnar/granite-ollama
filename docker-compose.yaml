@@ -12,7 +12,8 @@ services:
       - 11434:11434
     volumes: 
       - $PWD/ollama:/root/.ollama
-    restart: unless-stopped
+    # don't restart. this will be managed with systemctl serverless operations 
+    # restart: unless-stopped
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
     container_name: open-webui
@@ -21,6 +22,8 @@ services:
     volumes: 
       - ./open-web-ui:/app/backend/data 
     environment: OLLAMA_BASE_URL=http://host.containers.internal:11434
+    # don't restart. this will be managed with systemctl serverless operations 
+    # restart: unless-stopped
   install-models: 
     build: 
       context: . 
